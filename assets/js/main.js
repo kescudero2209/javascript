@@ -1,3 +1,6 @@
+var buttonText = document.getElementById("try");
+document.getElementById("try").addEventListener( "click" , datos)
+
 function datos(){
     precio = 400000;
     let valor = document.getElementById("cantidad").value;
@@ -7,5 +10,8 @@ function datos(){
     document.querySelector("#quantity").innerHTML= valor;
     document.querySelector("#total").innerHTML= resultado;
     document.querySelector("#colour").style.backgroundColor = finalcolor;
+
+    
+   
 
 }
