@@ -1,0 +1,34 @@
+html, body{
+    margin: 0;
+    height: 100vh;
+}
+.principal{
+    display: flex;
+    gap: 1em;
+}
+.flex-item{
+    background-color: #809e50;
+    display: flex;
+    flex-direction: column;
+    margin-left: 4em;
+    padding: 4em;
+    gap: 1em;
+}
+p{
+    text-align: center;
+}
+.caract{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+h3{
+    display: flex;
+}
+.circle {
+    height: 40px;
+    width: 40px;
+    border-radius: 100%;
+    border: 1px solid black;
+  }
+ 
