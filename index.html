@@ -19,13 +19,27 @@
         <div class="flex-item">
           <img src="assets/img/pc.png" alt="Notebook Gamer AMD" />
           <p>Laptor Gamer ADM</p>
-          <input type="text" id="cantidad" placeholder="Ingresa la cantidad" />
-          <input
-            type="text"
-            id="color"
-            placeholder="Ingresa el color en inglés"
-          />
-          <h5>Precio $400000</h5>
+          <label for="color">Elige una cantidad: </label>
+          <input type="text" id="cantidad" placeholder="Ingresa la cantidad " />
+
+          <label for="color">Elige un color: </label>
+          <select name="color" id="color">
+            <option value="Red">Rojo</option>
+            <option value="Blue">Azul</option>
+            <option value="Green">Verde</option>
+            <option value="Purple">Morado</option>
+          </select>
+
+          <label for="precio">Elige un precio</label>
+          <h5>
+            Precio
+            <select name="precio" id="precio">
+              <option value="500000">$500000</option>
+              <option value="350000">$350000</option>
+              <option value="400000">$400000</option>
+              <option value="3800000">$380000</option>
+            </select>
+          </h5>
           <button id="try">Click aquí</button>
         </div>
 

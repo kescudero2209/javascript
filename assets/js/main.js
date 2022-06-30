@@ -1,17 +1,12 @@
-var buttonText = document.getElementById("try");
-document.getElementById("try").addEventListener( "click" , datos)
+let buttonText = document.getElementById("try");
 
-function datos(){
-    precio = 400000;
-    let valor = document.getElementById("cantidad").value;
-    let finalcolor = document.getElementById("color").value;
-    let resultado = precio * valor;
+buttonText.addEventListener("click", (e) => {
+  let precio = document.getElementById("precio").value;
+  let valor = document.getElementById("cantidad").value;
+  let finalcolor = document.getElementById("color").value;
+  let resultado = precio * valor;
 
-    document.querySelector("#quantity").innerHTML= valor;
-    document.querySelector("#total").innerHTML= resultado;
-    document.querySelector("#colour").style.backgroundColor = finalcolor;
-
-    
-   
-
-}
+  document.querySelector("#quantity").innerHTML = valor;
+  document.querySelector("#total").innerHTML = resultado;
+  document.querySelector("#colour").style.backgroundColor = finalcolor;
+});
